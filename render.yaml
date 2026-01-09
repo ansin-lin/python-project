@@ -15,16 +15,6 @@ services:
           name: words-db
           property: connectionString
 
-staticSites:
-  - name: words-frontend
-    plan: free
-    rootDir: frontend
-    buildCommand: npm ci && npm run build
-    staticPublishPath: dist
-    envVars:
-      - key: VITE_API_BASE_URL
-        value: https://words-backend.onrender.com
-
 databases:
   - name: words-db
     plan: free
