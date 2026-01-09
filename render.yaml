@@ -15,8 +15,8 @@ services:
           name: words-db
           property: connectionString
 
-  - type: static
-    name: words-frontend
+staticSites:
+  - name: words-frontend
     plan: free
     rootDir: frontend
     buildCommand: npm ci && npm run build
