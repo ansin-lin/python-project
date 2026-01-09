@@ -15,7 +15,7 @@ services:
           name: words-db
           property: connectionString
 
-  - type: static_site
+  - type: static
     name: words-frontend
     plan: free
     rootDir: frontend
